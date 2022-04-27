@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Moyenne</title>
+  </head>
+  <body>
+    <table border="1" width="17%">
+      <tr>
+        <th>Init-web</th>
+        <td>2</td>
+        <td>
+          <input type="number" id="web" value="0" min="0" max="20" required />
+        </td>
+      </tr>
+      <tr>
+        <th>ADM</th>
+        <td>3</td>
+        <td>
+          <input type="number" id="ADM" value="0" min="0" max="20" required />
+        </td>
+      </tr>
+      <tr>
+        <th>TCP IP</th>
+        <td>3</td>
+        <td>
+          <input type="number" id="TCP" value="0" min="0" max="20" required />
+        </td>
+      </tr>
+      <tr>
+        <th>Microprocesseurs</th>
+        <td>3</td>
+        <td>
+          <input type="number" id="micro" value="0" min="0" max="20" required />
+        </td>
+      </tr>
+      <tr>
+        <th>ANTENNE</th>
+        <td>3</td>
+        <td>
+          <input type="number" id="ant" value="0" min="0" max="20" required />
+        </td>
+      </tr>
+      <tr>
+        <th>TS</th>
+        <td>3</td>
+        <td>
+          <input type="number" id="TS" value="0" min="0" max="20" required />
+        </td>
+      </tr>
+      <tr>
+        <th>NIR</th>
+        <td>2</td>
+        <td>
+          <input type="number" id="nir" value="0" min="0" max="20" required />
+        </td>
+      </tr>
+      <tr>
+        <th>Anglais</th>
+        <td>1</td>
+        <td>
+          <input type="number" id="ang" value="0" min="0" max="20" required />
+        </td>
+      </tr>
+    </table>
+    <button
+      onclick="moy(web.value,2,adm.value,3,tcp.value,3,micro.value,3,ant.value,3,nir.value,2,ang.value,1)"
+    >
+      calcul
+    </button>
+    <p id="demo" class="p"></p>
+
+    <script>
+      //declaration
+      var web = document.getElementById("web");
+      var adm = document.getElementById("ADM");
+      var tcp = document.getElementById("TCP");
+      var micro = document.getElementById("micro");
+      var ant = document.getElementById("ant");
+      var nir = document.getElementById("nir");
+      var ang = document.getElementById("ang");
+
+      //fonction qui calcul la moyenne
+      function moy(a, co1, b, co2, c, co3, d, co4, e, co5, f, co6, g, co7) {
+        var s = co1 + co2 + co3 + co4 + co5 + co6 + co7;
+        var m =
+          (a * co1 +
+            b * co2 +
+            c * co3 +
+            d * co4 +
+            e * co5 +
+            f * co6 +
+            g * co7) /
+          s;
+        //condition
+        if (m >= 10) {
+          document.getElementById("demo").innerHTML =
+            "Vous etes admis!!!, avec une moyenne de " + m;
+        } else {
+          document.getElementById("demo").innerHTML =
+            "Vous etes ajourné, votre moyenne est " + m;
+        }
+      }
+    </script>
+  </body>
+</html>
