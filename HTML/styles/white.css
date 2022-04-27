@@ -1,0 +1,64 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: cornflowerblue;
+    transition: 0.4s;
+}
+.dark{
+    font-size: 30px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: midnightblue;
+    background-color: transparent;
+    border: none;
+    transition: 0.4s;
+}
+.jeff{
+    text-align: center;
+    position: absolute;
+    height: 80%;
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-image: url("../images/morocco.png");
+    transition:0.4s;
+}
+.jeff button{
+    display: inline-block;
+    margin: 4%;
+    height: 4%;
+    width: 60%;
+    border-radius: 10px;
+    background-color: lavender;
+    border: 4px solid lavender;
+    font-weight: bolder;
+}
+.jeff a{
+    text-decoration: none;
+    color: black;
+}
+.me{
+    
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 5%;
+    left: -300px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: lavender;
+    transition: 0.4s;
+}
+.boom{
+    position: absolute;
+    width: 4%;
+    background-color: lavender;
+    left: -10px;
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid lavender;
+    color: black;
+    transition: 0.4s;
+}
