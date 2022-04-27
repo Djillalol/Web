@@ -67,7 +67,7 @@
       </tr>
     </table>
     <button
-      onclick="moy(web.value,2,adm.value,3,tcp.value,3,micro.value,3,ant.value,3,nir.value,2,ang.value,1)"
+      onclick="moy(web.value,2,adm.value,3,tcp.value,3,ts.value,3,micro.value,3,ant.value,3,nir.value,2,ang.value,1)"
     >
       calcul
     </button>
@@ -82,10 +82,28 @@
       var ant = document.getElementById("ant");
       var nir = document.getElementById("nir");
       var ang = document.getElementById("ang");
+      var ts = document.getElementById("ts");
 
       //fonction qui calcul la moyenne
-      function moy(a, co1, b, co2, c, co3, d, co4, e, co5, f, co6, g, co7) {
-        var s = co1 + co2 + co3 + co4 + co5 + co6 + co7;
+      function moy(
+        a,
+        co1,
+        b,
+        co2,
+        c,
+        co3,
+        d,
+        co4,
+        e,
+        co5,
+        f,
+        co6,
+        g,
+        co7,
+        h,
+        co8
+      ) {
+        var s = co1 + co2 + co3 + co4 + co5 + co6 + co7 + co8;
         var m =
           (a * co1 +
             b * co2 +
@@ -93,7 +111,8 @@
             d * co4 +
             e * co5 +
             f * co6 +
-            g * co7) /
+            g * co7 +
+            h * co8) /
           s;
         //condition
         if (m >= 10) {
