@@ -44,7 +44,6 @@ body{
 }
 .me{
     display: flex;
-    font-size: 10%;
     justify-content: center;
     text-align: center;
     position: absolute;
