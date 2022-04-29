@@ -1,8 +1,8 @@
-#Welcome
+# Welcome
 
 [My main page](https://djillalol.github.io/Web/HTML/L2-GTR.html)
 
-My js/html projects:
+## My js/html projects:
 
 [Project1](http://djillali.alwaysdata.net/Tp4/tp4.html)
 
