@@ -44,6 +44,14 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
+.demo{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
   
 .tables input[type="button"]{
     width: 100%;
@@ -72,4 +80,23 @@ body{
     position: absolute;
     top: 5%;
     left: 3%;
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    width: 10%;
+    border-radius: 10px;
+    background-color: white;
+    color: skyblue;
+    border: none;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    display: none;
+}
+.btn:hover{
+    color: white;
+    background-color: lightblue;
 }

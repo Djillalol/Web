@@ -128,11 +128,47 @@ function move(i, j) {
             puzzle_tab[i][j] = ''
         }
     }
-    opBoard()
+    opBoard();
+    win();
 }
 
 function anothertab () {
     table = document.getElementById('mov_tab')
     table.innerHTML = "<tbody><th>#</th><th>Opération</th></tr></tbody>"
  }
+ function win() {
+    var j = 0;
+    var k = 0
+    var puzzle_2 = []
+    for (i = 0; i < P * N; i++) {
+        puzzle_2[i] = puzzle_tab[j][k]
+        if (k === C - 1) {
+            j++
+            k = 0
+        } else {
+            k++
+        }
+    }
+    var x = 0;
+    let result = []
+    for (var z = 0; z < (P * N); z++) {
+        if (puzzle_2[z] !== '') {
+            result[x] = puzzle_2[z]
+            x++
+        }
+    }
 
+    i = 0
+    while (i < (P * N)) {
+        if (result[i] > result[i + 1]) {
+            break;
+        } else {
+            i++
+        }
+    }
+
+    if (i === (P * N)) {
+        document.getElementById('demo').innerHTML = "YOU WON!!";
+        document.getElementById('btn').style.display = "block";
+    }
+}
