@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/game.css" />
+    <title>TP7</title>
+  </head>
+
+  <body>
+    <div class="box">
+      <label for="L">Lignes:</label>
+      <input name="L" type="number" value="5" oninput="LC()" id="L" />
+      <label for="C">Colonnes:</label>
+      <input name="C" type="number" value="5" oninput="LC()" id="C" />
+    </div>
+    <div class="tables">
+      <table id="puzzle_tab"></table>
+    </div>
+    <div class="tab2">
+      <table id="mov_tab"></table>
+    </div>
+    <p class="nc">Nombre de coups: <span id="coups"></span></p>
+    <img
+      class="animation"
+      src="../images/astronaut-flying-on-space-vector (1).png"
+      alt=""
+    />
+  </body>
+
+  <script src="../js/game.js"></script>
+</html>
