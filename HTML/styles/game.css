@@ -81,14 +81,37 @@ body{
         50% {top: 1%;}
         100%{top: 0%;}
 }
-.tab2 table{
-    width: 10%;
-    border: 4px solid white;
-    color: white;
+.tab2{
     position: absolute;
     top: 5%;
     left: 3%;
+
+    overflow-y: scroll;
+    height: 20%;
+    width: 20%;
 }
+.tab2 table{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    width: 95%;
+    height: 95%;
+    border: 4px solid white;
+    color: white;
+    
+}
+.tab2::-webkit-scrollbar {
+    width: 10px; /* Mostly for vertical scrollbars */
+    
+  }
+  .tab2::-webkit-scrollbar-thumb { /* Foreground */
+    background: #999;
+  }
+  .tab2::-webkit-scrollbar-track { /* Background */
+    background: #333;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
 .btn{
     position: absolute;
     left: 50%;
