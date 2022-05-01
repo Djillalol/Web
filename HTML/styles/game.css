@@ -27,13 +27,13 @@ body{
 
 }
 .tables table{
-    width: 50%;
+    width: 20%;
     border: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 5%;
-    background-color: transparent;
+    background-color: white;
     border-radius: 5px;
 }
 .nc{
