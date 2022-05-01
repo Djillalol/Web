@@ -81,15 +81,22 @@ body{
         50% {top: 1%;}
         100%{top: 0%;}
 }
+.jpp{
+    border: 4px solid white;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    border-radius: 10px;
+    height: 20%;
+    width: 22%;
+}
 .tab2{
     position: absolute;
     top: 5%;
     left: 3%;
-    border: 4px solid white;
-    border-radius: 10px;
     overflow-y: scroll;
-    height: 20%;
-    width: 20%;
+    height: 96%;
+    width: 96.5%;
 }
 .tab2 table{
     position: absolute;
@@ -123,8 +130,7 @@ body{
   }
   .tab2::-webkit-scrollbar-track { /* Background */
     background: transparent;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-bottom: 15px;
   }
 .btn{
     position: absolute;
