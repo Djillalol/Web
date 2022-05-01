@@ -29,18 +29,31 @@ function LC() {
 }
 
 function maketable() {
-        puzzle_tab = []
-        for (i = 0; i < P; i++) {
-            puzzle_tab.push([])
-            for (j = 0; j < N; j++) {
-                puzzle_tab[i].push(Math.floor(Math.random() * (P*N-1))+1)
-            }
+    pbl = []
+    for (var i = 0; i < (P*N)-1; i++) {
+        pbl[i] = i+1
+    }
+    idxs = []
+    for (var i = 0; i < P*N; i++) {
+        idxs[i] = i;
+    }
+
+    rest_idx = (P*N)-1
+    puzzle_tab = []
+    for (i = 0; i < P; i++) {
+        puzzle_tab.push([])
+        for (j = 0; j < N; j++) {
+            n = Math.floor(Math.random() * rest_idx)
+            idx = idxs[n]
+            aleatoire = pbl[idx]
+            puzzle_tab[i].push(aleatoire)
+            rest_idx = rest_idx - 1
+            idxs.splice(n, 1) 
+
         }
-        puzzle_tab[Math.floor(Math.random() * P)][Math.floor(Math.random() * N)] = ''
-        opBoard()
-        coups = 0
-        document.getElementById('coups').innerHTML = coups;
-        anothertab ()
+    }
+    puzzle_tab[P-1][N-1] = ''
+    opBoard()
 }
 
 function opBoard() {
