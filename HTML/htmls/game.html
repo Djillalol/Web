@@ -11,9 +11,25 @@
   <body>
     <div class="box">
       <label for="L">Lignes:</label>
-      <input name="L" type="number" value="2" oninput="LC()" id="L" />
+      <input
+        name="L"
+        type="number"
+        value="2"
+        min="2"
+        max="5"
+        oninput="LC()"
+        id="L"
+      />
       <label for="C">Colonnes:</label>
-      <input name="C" type="number" value="2" oninput="LC()" id="C" />
+      <input
+        name="C"
+        type="number"
+        value="2"
+        min="2"
+        max="5"
+        oninput="LC()"
+        id="C"
+      />
     </div>
     <div class="tables">
       <table id="puzzle_tab"></table>
