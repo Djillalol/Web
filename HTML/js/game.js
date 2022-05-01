@@ -142,7 +142,7 @@ function anothertab () {
     var puzzle_2 = []
     for (i = 0; i < P * N; i++) {
         puzzle_2[i] = puzzle_tab[j][k]
-        if (k === C - 1) {
+        if (k === N - 1) {
             j++
             k = 0
         } else {
