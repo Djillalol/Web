@@ -49,8 +49,9 @@ input{
     border-radius: 0.4em;
 }
 h1{
-    color: cornflowerblue;
+    color: white;
     text-align: center;
+    font-size: larger;
 }
 .links a{
     border: 2px solid white;
