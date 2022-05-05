@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/GH.css" />
+  </head>
+  <body>
+    <div class="TP">
+      <div class="infos">
+        <p>
+          2018:
+          <input
+            type="number"
+            id="i1"
+            max="200"
+            min="0"
+            value="0"
+            oninput="C()"
+          />
+        </p>
+        <p>
+          2019:
+          <input
+            type="number"
+            id="i2"
+            max="200"
+            min="0"
+            value="0"
+            oninput="C()"
+          />
+        </p>
+        <p>
+          2020:
+          <input
+            type="number"
+            id="i3"
+            max="200"
+            min="0"
+            value="0"
+            oninput="C()"
+          />
+        </p>
+        <p>
+          2021:
+          <input
+            type="number"
+            id="i4"
+            max="200"
+            min="0"
+            value="0"
+            oninput="C()"
+          />
+        </p>
+        <p>
+          2022:
+          <input
+            type="number"
+            id="i5"
+            max="200"
+            min="0"
+            value="0"
+            oninput="C()"
+          />
+        </p>
+      </div>
+
+      <div class="graph">
+        <svg height="220" width="340">
+          <line x1="0" y1="0" x2="0" y2="200" stroke="white" stroke-width="3" />
+          <line
+            x1="0"
+            y1="200"
+            x2="320"
+            y2="200"
+            stroke="white"
+            stroke-width="3"
+          />
+          <line
+            x1="0"
+            y1="150"
+            x2="5"
+            y2="150"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="0"
+            y1="110"
+            x2="5"
+            y2="110"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line x1="0" y1="70" x2="5" y2="70" stroke="white" stroke-width="2" />
+          <line x1="0" y1="30" x2="5" y2="30" stroke="white" stroke-width="2" />
+
+          <line
+            id="l1"
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="0"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            id="l2"
+            x1="80"
+            y1="0"
+            x2="80"
+            y2="0"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            id="l3"
+            x1="160"
+            y1="0"
+            x2="160"
+            y2="0"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            id="l4"
+            x1="240"
+            y1="0"
+            x2="240"
+            y2="0"
+            stroke="white"
+            stroke-width="2"
+          />
+
+          <text id="t1" x="5" y="180" fill="red">2018</text>
+          <text id="t2" x="65" y="180" fill="red">2019</text>
+          <text id="t3" x="145" y="180" fill="red">2020</text>
+          <text id="t4" x="225" y="180" fill="red">2021</text>
+          <text id="t5" x="300" y="180" fill="red">2022</text>
+        </svg>
+      </div>
+    </div>
+    <script src="../js/GH.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/GH.css" />
+  </head>
+  <body>
+    <div class="TP">
+      <div class="infos">
+        <p>
+          2018:
+          <input
+            type="number"
+            id="i1"
+            max="200"
+            min="0"
+            value="0"
+            oninput="HO()"
+          />
+        </p>
+        <p>
+          2019:
+          <input
+            type="number"
+            id="i2"
+            max="200"
+            min="0"
+            value="0"
+            oninput="HO()"
+          />
+        </p>
+        <p>
+          2020:
+          <input
+            type="number"
+            id="i3"
+            max="200"
+            min="0"
+            value="0"
+            oninput="HO()"
+          />
+        </p>
+        <p>
+          2021:
+          <input
+            type="number"
+            id="i4"
+            max="200"
+            min="0"
+            value="0"
+            oninput="HO()"
+          />
+        </p>
+        <p>
+          2022:
+          <input
+            type="number"
+            id="i5"
+            max="200"
+            min="0"
+            value="0"
+            oninput="HO()"
+          />
+        </p>
+      </div>
+
+      <div class="graphH">
+        <svg height="220" width="340">
+          <rect
+            x="0"
+            id="l1"
+            y="20"
+            width="0"
+            height="40"
+            fill="#387FFF"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+          <rect
+            x="0"
+            id="l2"
+            y="60"
+            width="0"
+            height="40"
+            fill="#0040B3"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+          <rect
+            x="0"
+            id="l3"
+            y="100"
+            width="0"
+            height="40"
+            fill="#00D4D2"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+          <rect
+            x="0"
+            id="l4"
+            y="140"
+            width="0"
+            height="40"
+            fill="#6CFDFC"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+          <rect
+            x="0"
+            id="l5"
+            y="180"
+            width="0"
+            height="40"
+            fill="#26FDC4"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+
+          <line
+            x1="0"
+            y1="20"
+            x2="0"
+            y2="340"
+            stroke="white"
+            stroke-width="3"
+          />
+          <line
+            x1="0"
+            y1="20"
+            x2="200"
+            y2="20"
+            stroke="white"
+            stroke-width="3"
+          />
+
+          <line
+            x1="40"
+            y1="20"
+            x2="40"
+            y2="25"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="80"
+            y1="20"
+            x2="80"
+            y2="25"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="120"
+            y1="20"
+            x2="120"
+            y2="25"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="160"
+            y1="20"
+            x2="160"
+            y2="25"
+            stroke="white"
+            stroke-width="2"
+          />
+
+          <text id="e1" x="8" y="45" fill="red">2018</text>
+          <text id="e2" x="8" y="85" fill="red">2019</text>
+          <text id="e3" x="8" y="125" fill="red">2020</text>
+          <text id="e4" x="8" y="165" fill="red">2021</text>
+          <text id="e5" x="8" y="205" fill="red">2022</text>
+        </svg>
+      </div>
+    </div>
+  </body>
+  <script src="../js/GH.js"></script>
+</html>

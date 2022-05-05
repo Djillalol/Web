@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/GH.css" />
+  </head>
+  <body>
+    <div class="TP">
+      <div class="infos">
+        <p>
+          2018:
+          <input
+            type="number"
+            id="i1"
+            max="200"
+            min="0"
+            value="0"
+            oninput="H()"
+          />
+        </p>
+        <p>
+          2019:
+          <input
+            type="number"
+            id="i2"
+            max="200"
+            min="0"
+            value="0"
+            oninput="H()"
+          />
+        </p>
+        <p>
+          2020:
+          <input
+            type="number"
+            id="i3"
+            max="200"
+            min="0"
+            value="0"
+            oninput="H()"
+          />
+        </p>
+        <p>
+          2021:
+          <input
+            type="number"
+            id="i4"
+            max="200"
+            min="0"
+            value="0"
+            oninput="H()"
+          />
+        </p>
+        <p>
+          2022:
+          <input
+            type="number"
+            id="i5"
+            max="200"
+            min="0"
+            value="0"
+            oninput="H()"
+          />
+        </p>
+      </div>
+
+      <div class="graph">
+        <svg height="220" width="340">
+          <rect
+            x="0"
+            id="l1"
+            y="200"
+            width="60"
+            height="0"
+            fill="#387FFF"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+          <rect
+            x="60"
+            id="l2"
+            y="200"
+            width="60"
+            height="0"
+            fill="#0040B3"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+          <rect
+            x="120"
+            id="l3"
+            y="200"
+            width="60"
+            height="0"
+            fill="#00D4D2"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+          <rect
+            x="180"
+            id="l4"
+            y="200"
+            width="60"
+            height="0"
+            fill="#6CFDFC"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+          <rect
+            x="240"
+            id="l5"
+            y="200"
+            width="60"
+            height="0"
+            fill="#26FDC4"
+            stroke="#E5FF00"
+            stroke-width="1"
+          />
+
+          <line x1="0" y1="0" x2="0" y2="200" stroke="white" stroke-width="3" />
+          <line
+            x1="0"
+            y1="200"
+            x2="320"
+            y2="200"
+            stroke="white"
+            stroke-width="3"
+          />
+          <line
+            x1="0"
+            y1="150"
+            x2="5"
+            y2="150"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="0"
+            y1="110"
+            x2="5"
+            y2="110"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line x1="0" y1="70" x2="5" y2="70" stroke="white" stroke-width="2" />
+          <line x1="0" y1="30" x2="5" y2="30" stroke="white" stroke-width="2" />
+
+          <text x="15" y="210" fill="red">2018</text>
+          <text x="75" y="210" fill="red">2019</text>
+          <text x="135" y="210" fill="red">2020</text>
+          <text x="195" y="210" fill="red">2021</text>
+          <text x="255" y="210" fill="red">2022</text>
+        </svg>
+      </div>
+    </div>
+
+    <script src="../js/GH.js"></script>
+  </body>
+</html>
